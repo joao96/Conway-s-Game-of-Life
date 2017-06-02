@@ -1,0 +1,52 @@
+***************************
+* TRABALHO REALIZADO POR: *
+***************************
+
+******************************************
+*Lucas Campos Jorge 15/0154135		 *
+*João Victor de Souza Poeltti 15/0132425 *
+******************************************			
+
+
+NOTA
+ - Caso deseje abrir o programa numa IDE, por favor, abrir no IntelliJ IDEA.
+ - Caso apareça um erro de gradle, selecionar na aba lateral direita e selecionar Gradle. Feito isso, clique no botão refresh azul logo em cima da janela que apareceu.
+
+INSTRUÇÕES PARA COMPILAR O CÓDIGO
+
+Via terminal, entre na pasta "GoL/Game of Life", digite o seguinte comando: "gradlew dist"
+O arquivo .jar poderá ser encontrado na pasta "Game of Life/desktop/build/libs"
+
+INSTRUÇÕES PARA EXECUTAR O PROJETO
+
+- Para executar o código do GoL-Strategy, entrar na pasta "GoL-Strategy/GoLS/classes/artifacts/GameOfLifeS_jar" e digitar o comando "java -jar GameOfLifeS.jar"
+
+- Para executar o código do GoL-TM, entrar na pasta "GoL-TM/GoL_TM/classes/artifacts/GameOfLifeS_jar" e digitar o comando "java -jar GameOfLifeS.jar"
+
+- Para executar o trabalho mais completo. entrar na pasta "GoL/executavel" e digitar o seguinte comando no terminal: "java -jar desktop-1.0.jar"
+
+- Após rodar o jogo, utilizar os comandos presentes na tela de início.
+
+ENTER -> INICIAR E FINALIZAR O JOGO
+
+TAB -> TROCAR DE REGRA
+SETA DIRECIONAL DIREITA -> PRÓXIMA GERAÇÃO
+SETA DIRECIONAL ESQUERDA -> UNDO
+BARRA DE ESPAÇO -> PAUSA E INICIA GERAÇÃO AUTOMÁTICA
+M -> MUTAR OS SONS
+C -> LIMPAR MATRIZ 
+
+IMPLEMENTAÇÕES NO PROJETO
+
+- Foram implementados tanto o padrão Template Method quanto o padrão Strategy. Porém o utilizado para o restante do trabalho foi o último, visto que sua implementação necessita apenas de uma mudança de referência para mudar a regra do jogo;
+
+- Foi, também, criada a GUI utilizando a biblioteca LIBGDX. Nesta, foram acrescentados arquivos de áudio e fotos; 
+
+- Além disso, a operação de Undo foi implementada utilizando o padrão de projeto MEMENTO;
+
+- Por fim, foi corrigida a falha de implementação que não fornecia um ambiente infinito para o tabuleiro.
+
+
+LIMITAÇÕES DA SOLUÇÃO ATUAL
+
+- Para acrescentar novas regras é necessário adicionar a pasta "GoL/Game of Life/core/src/com.tp1.gol/hardcode" uma classe implementando a trait EstrategiaDeDerivacao. Além disso é necessário acrescentar o nome do pacote que se encontra a classe ao arquivo texto "EstrategiaDeDerivacao.txt" que pode ser encontrado no diretório "GoL/executavel".
